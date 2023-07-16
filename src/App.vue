@@ -1,14 +1,18 @@
 <template>
-	<Auth />
+	<component :is="layout"> </component>
 </template>
 
 <script>
-import Auth from './pages/Auth.vue';
+import AppLayout from '@/layouts/AppLayout.vue';
+import AuthLayout from '@/layouts/AuthLayout.vue';
 
 export default {
 	name: 'App',
-	components: {
-		Auth,
+	components: { AppLayout, AuthLayout },
+	computed: {
+		layout() {
+			return 'AppLayout';
+		},
 	},
 };
 </script>

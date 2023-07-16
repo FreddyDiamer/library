@@ -1,12 +1,12 @@
 <template>
 	<div>
-		<v-chip prepend-icon="$vuetify"> Auth </v-chip>
+		<h1>books</h1>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'AuthComponent',
+	name: 'BooksList',
 };
 </script>
 

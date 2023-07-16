@@ -1,12 +1,10 @@
 <template>
-	<div>
-		<v-chip prepend-icon="$vuetify"> Auth </v-chip>
-	</div>
+	<router-view />
 </template>
 
 <script>
 export default {
-	name: 'AuthComponent',
+	name: 'AuthLayout',
 };
 </script>
 
